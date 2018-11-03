@@ -1,13 +1,13 @@
 {
-  "main.css": "/react_routing/users/static/css/main.0a4e83a0.chunk.css",
-  "main.js": "/react_routing/users/static/js/main.aa4d1bd6.chunk.js",
-  "main.js.map": "/react_routing/users/static/js/main.aa4d1bd6.chunk.js.map",
-  "static/js/1.d47d3de0.chunk.js": "/react_routing/users/static/js/1.d47d3de0.chunk.js",
-  "static/js/1.d47d3de0.chunk.js.map": "/react_routing/users/static/js/1.d47d3de0.chunk.js.map",
-  "runtime~main.js": "/react_routing/users/static/js/runtime~main.ae63d061.js",
-  "runtime~main.js.map": "/react_routing/users/static/js/runtime~main.ae63d061.js.map",
-  "static/css/main.0a4e83a0.chunk.css.map": "/react_routing/users/static/css/main.0a4e83a0.chunk.css.map",
-  "index.html": "/react_routing/users/index.html",
-  "precache-manifest.f254ded89e2828f5d9b9b8e2c6dadc02.js": "/react_routing/users/precache-manifest.f254ded89e2828f5d9b9b8e2c6dadc02.js",
-  "service-worker.js": "/react_routing/users/service-worker.js"
+  "main.css": "/react_routing/static/css/main.0a4e83a0.chunk.css",
+  "main.js": "/react_routing/static/js/main.010baedd.chunk.js",
+  "main.js.map": "/react_routing/static/js/main.010baedd.chunk.js.map",
+  "static/js/1.d47d3de0.chunk.js": "/react_routing/static/js/1.d47d3de0.chunk.js",
+  "static/js/1.d47d3de0.chunk.js.map": "/react_routing/static/js/1.d47d3de0.chunk.js.map",
+  "runtime~main.js": "/react_routing/static/js/runtime~main.022fa9bf.js",
+  "runtime~main.js.map": "/react_routing/static/js/runtime~main.022fa9bf.js.map",
+  "static/css/main.0a4e83a0.chunk.css.map": "/react_routing/static/css/main.0a4e83a0.chunk.css.map",
+  "index.html": "/react_routing/index.html",
+  "precache-manifest.dff90040ea34629d527cad55f7051692.js": "/react_routing/precache-manifest.dff90040ea34629d527cad55f7051692.js",
+  "service-worker.js": "/react_routing/service-worker.js"
 }
