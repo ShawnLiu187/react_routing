@@ -1,0 +1,42 @@
+.itemTodo{
+    padding: 5px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    min-height: 8rem;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+p, h1{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size:1.5rem;
+    padding: 10px;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 6rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.id-container{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    min-height: 6rem;
+    justify-content: space-around;
+    align-items: flex-start;
+}

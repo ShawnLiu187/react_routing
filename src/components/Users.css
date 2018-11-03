@@ -1,0 +1,17 @@
+.loading{
+    text-align: center;
+    margin-top: 0.5rem;
+    animation: throbbing 1s infinite ease-in-out;
+}
+
+@keyframes throbbing{
+    0%{
+        font-size: 2rem;
+    }
+    50%{
+        font-size: 3rem;
+    }
+    100%{
+        font-size: 2rem;
+    }
+}
