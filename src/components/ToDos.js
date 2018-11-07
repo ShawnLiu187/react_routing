@@ -2,14 +2,16 @@ import React, { Component, Fragment } from 'react';
 import "./Header.css"
 import './ListContainer.css'
 import ItemTodo from './ItemTodo'
+import HeaderTodo from './HeaderTodo'
 
-function Header() {
-    return(
-        <header className="app-header">
-        <h1>React Project - ToDo(s)</h1>
-        </header>
-    )
-}
+// function Header() {
+//     return(
+//         <header className="app-header">
+//         <p className="backBtn">Back</p>
+//         <h1>React Project - ToDo(s)</h1>
+//         </header>
+//     )
+// }
 
 class Todos extends Component {
   constructor(){
@@ -47,11 +49,15 @@ class Todos extends Component {
     this.finishLoading()
 }
 
+goToUsers = () => {
+  this.props.history.push("/users");
+}
+
 
   render() {
     return (
         <Fragment>
-          <Header />
+          <HeaderTodo userRoute={this.goToUsers} header="ToDo(s)"/>
 
           {this.state.loading && (<h1 className="loading">Loading ToDo(s)...</h1>)}
 
@@ -60,7 +66,7 @@ class Todos extends Component {
           {!this.state.loading && this.props.match.params.userID && (
             <ul className="split list-container">
             {this.state.list.map((item) => (
-            <ItemTodo key={item.id} todo={item}/>
+            <ItemTodo key={item.id} todo={item} userRoute={this.goToUsers}/>
             ))}
             </ul>
           )}

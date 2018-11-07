@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './ItemTodo.css';
 
 export default class ItemTodo extends Component{
+
+
     render(){
         return(
             <li className="itemTodo">
@@ -9,7 +11,7 @@ export default class ItemTodo extends Component{
             <div className="todo-container">
             <h1>{this.props.todo.title}</h1>
             {/* <h1>{this.props.todo.title}</h1> */}
-            <p>Task Status: {this.props.todo.complete?"Completed":"Pending"}</p>
+            <p className={this.props.todo.completed?"green":"red"}>Task Status: {this.props.todo.completed?"Completed":"Pending"}</p>
             {/* <input className={this.state.active?"input-field":"hide"} defaultValue={this.props.player.name} ref={this.nameRef}></input>
             <input className={this.state.active?"input-field":"hide"} defaultValue={this.props.player.position} ref={this.positionRef}></input> */}
             </div>

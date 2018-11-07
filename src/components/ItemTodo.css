@@ -5,6 +5,7 @@
     min-height: 8rem;
     position: relative;
     margin-bottom: 10px;
+    overflow: scroll;
 }
 
 p, h1{
@@ -39,4 +40,12 @@ p{
     min-height: 6rem;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.green{
+    color: royalblue
+}
+
+.red{
+    color: red;
 }

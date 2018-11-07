@@ -2,10 +2,12 @@ import React, { Component, Fragment } from 'react';
 import "./Header.css"
 import './ListContainer.css'
 import ItemPost from './ItemPost'
+import HeaderTodo from './HeaderTodo'
 
 function Header() {
     return(
         <header className="app-header">
+        <p className="backBtn">Back</p>
         <h1>React Project - Post(s)</h1>
         </header>
     )
@@ -47,11 +49,15 @@ class Posts extends Component {
     this.finishLoading()
 }
 
+goToUsers = () => {
+  this.props.history.push("/users");
+}
+
 
   render() {
     return (
         <Fragment>
-          <Header />
+          <HeaderTodo userRoute={this.goToUsers} header="Posts"/>
 
           {this.state.loading && (<h1 className="loading">Loading Post(s)...</h1>)}
 

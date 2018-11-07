@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, HashRouter, Switch, Route} from 'react-router-dom';
 import Users from './components/Users'
 import NotFound from './components/NotFound'
 import Todos from './components/ToDos';
@@ -12,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
+        <HashRouter>
         <Switch>
           <Route exact path="/" component={Users}/>
           <Route exact path="/users" component={Users}/>
@@ -22,7 +22,7 @@ class App extends Component {
           <Route path="/posts/:userID" component={Posts}/>
           <Route component={NotFound} />
         </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
   }
 }
